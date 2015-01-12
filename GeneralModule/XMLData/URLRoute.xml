@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<URLRoute>
+  <ignores>
+    <ignore value="{resource}.aspx/{*pathInfo}" />
+    <ignore value="{resource}.axd/{*pathInfo}" />
+    <ignore value="{resource}.xml/{*pathInfo}" />
+    <ignore value="{resource}.img/{*pathInfo}" />
+    <ignore value="itemnum/{resource}.img/{*pathInfo}" />
+    <ignore value="itemcode/{resource}.img/{*pathInfo}" />
+    <ignore value="itemnum/{resource}/all.img/{*pathInfo}" />
+    <ignore value="itemcode/{resource}/all.img/{*pathInfo}" />
+  </ignores>
+  <routes>
+    <route name="demo" url="demo/{page}/{count}" page="~/Demo.aspx" priority="50">
+      <para name="page" defval="2" regval="^\d$" />
+      <para name="count" defval="2" regval="^\d$" />
+    </route>
+    <route name="category" url="abc/{page}" page="~/category.aspx" priority="2">
+      <para name="page" defval="1" regval="\d" />
+    </route>
+  </routes>
+</URLRoute>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Modules>
+  <ModuleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <moduleName>SearchEngineOptimise</moduleName>
+    <dataType>SQLServer</dataType>
+    <dataPosition>SEO</dataPosition>
+    <isDebug>false</isDebug>
+    <version>1.0.0</version>
+  </ModuleInfo>
+  <ModuleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <moduleName>URLSecurity</moduleName>
+    <dataType>XML</dataType>
+    <dataPosition>~\XMLData\URLSecurity.xml</dataPosition>
+    <isDebug>false</isDebug>
+    <version>1.0.0</version>
+  </ModuleInfo>
+  <ModuleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <moduleName>ApplicationErrorLog</moduleName>
+    <dataType>XML</dataType>
+    <dataPosition>~\XMLData\ApplicationErrorLog.xml</dataPosition>
+    <isDebug>false</isDebug>
+    <version>1.0.0</version>
+  </ModuleInfo>
+  <ModuleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <moduleName>URLRoute</moduleName>
+    <dataType>XML</dataType>
+    <dataPosition>~\XMLData\URLRoute.xml</dataPosition>
+    <isDebug>false</isDebug>
+    <version>1.0.0</version>
+  </ModuleInfo>
+ <ModuleInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <moduleName>SignLog</moduleName>
+    <dataType>SQlServer</dataType>
+    <dataPosition>database=sboheyhey;uid=sa;pwd=evoss;server=.\sqlalan</dataPosition>
+    <isDebug>false</isDebug>
+    <version>1.0.0</version>
+  </ModuleInfo>
+</Modules>
