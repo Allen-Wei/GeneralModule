@@ -411,6 +411,30 @@ namespace GeneralModule.Utilily.Extension
             return instance;
         }
 
+
+        public static void eSetValuesExclude(this object entity, object target, params string[] excludes)
+        {
+            entity.GetType().GetProperties().Where(prop => !excludes.Contains(prop.Name)).All(prop =>
+            {
+                prop.SetValue(entity, target.eGetValue(prop.Name), null);
+                return true;
+            });
+        }
+
+        public static void eSetValuesInclude(this object entity, object target, params string[] includes)
+        {
+            entity.GetType().GetProperties().Where(prop => includes.Contains(prop.Name)).All(prop =>
+            {
+                prop.SetValue(entity, target.eGetValue(prop.Name), null);
+                return true;
+            });
+        }
+        public static object eGetValue(this object entity, string propertyName)
+        {
+            var property = entity.GetType().GetProperties().FirstOrDefault(prop => prop.Name == propertyName);
+            if (property == null) return null;
+            return property.GetValue(entity, null);
+        }
         #endregion
 
     }
